@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="UTF-8">
+<meta baidu-gxt-verify-token="2db4e1f7e98ac9f0df41cf01eb606765">
+<title>lp&hq</title>
+<meta name="description" content="鹏哥巧美女结婚快乐">
+<meta name="Keywords" content="蕲春,胡坝，巧儿，结婚">
+<script>
+			var index=1;
+			// 上一张功能
+			function shang(){
+				var image=document.getElementById("m1");
+				index--;
+				if(index==-1){
+					index=75;
+				}
+				image.src="images/"+index+".jpg";
+			}
+			// 下一张功能
+			
+			// 左箭头出现
+			function zuoru(){
+				var n=document.getElementById("m");
+				n.style.visibility="visible";	
+			}
+			// 左箭头消失
+			function zuochu(){
+				var n=document.getElementById("m");
+				n.style.visibility="hidden";	
+			}
+			// 右箭头出现
+			function youru(){
+				var v=document.getElementById("n");
+				v.style.visibility="visible";
+			}
+			// 右箭头消失
+			function youchu(){
+				var v=document.getElementById("n");
+				v.style.visibility="hidden";
+			}
+			
+		</script>px
+<style>
+/*  标题 */
+table{
+	margin-top: 20px;
+}
+ 
+#p1 {
+	color: rgb(151, 149, 32);
+	font-size: 60px;
+	font-family: 黑体;
+}
+/* 图片 */
+#m1 {
+	width: 1200px;
+	height: 800px;
+	
+}
+body{
+	margin-top: 0;
+	background-image:  url(images/bg.jpg) ;
+	
+}
+.shang{
+	height: 200px;
+	width: 400px;
+}
+.shang {
+	font-size: 50px;
+	text-shadow: 1px 1px aqua;
+color: #fef4e9;
+border: solid 1px #da7c0c;
+background: #f78d1d;
+background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.shang:hover {
+background: #f47c20;
+background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+ background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.shang:active {
+color: #fcd3a5;
+ background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+.xia{
+	height: 180px;
+	width: 360px;
+	border-radius: 90px;
+	
+}
+.video{
+	display: inline-block;
+	height: 180px;
+	width: 360px;
+	border-radius: 90px;
+	background-color: #70aa70;
+	
+	
+}
+.link{
+	text-decoration: none;
+	color: rgb(124, 82, 82);
+}
+</style>
+<!-- 背景音乐 -->
+<!-- <bgsound src="" loop="-1"/> -->
+<!-- <embed src="images/Superficial Love-Karim Mika.mp3"  type="text/music" hidden="true" autostart="true" loop="true"> -->
+	
+<!-- <video controls="controls" autoplay="autoplay" autostart="true" loop="true" name="media" hidden="true"><source src="bgm.mp3" type="audio/mpeg"></video> -->
+ 
+
+
+</head>
+<body>
+	<div>
+<!-- 整体居中 -->
+<table border="0" cellspacing="0" width="60%" height="30%" align="left" >
+  <!-- 标题 -->
+  
+  <!-- 左箭头，图片，右箭头 -->
+  <tr>
+	<td>
+		<video id="v1" controls="controls" height="200px" width="400px"  autostart="true" loop="true" name="media" ><source  src="images/VID_20200112_190535.mp4" type="audio/mpeg"></video>
+			+
+					<audio controls autoplay="autoplay"   display="none" 
+					style="width: 400px; background-color:rgba(255, 255, 255, 0.3)" >
+						<source src="images/Superficial Love-Karim Mika.mp3"></audio>
+					<input class="shang" type="button" value="换照片" onClick="shang()"/>
+				
+							<center><a href="https://www.baidu.com/" class="link">友情link</a></center>
+		
+	</td>
+    <td><center>
+        <img id="m1" src="images/1.jpg" usemap="#p" title="电子相册"/>
+	  </center></td>
+	
+  </tr>
+  <tr>
+    <td  colspan="3"><marquee id="p1">
+      生活不易，且行且珍惜！
+      </marquee></td>
+  </tr>
+  <!-- 按钮 -->
+  </table>
+</div>
+  
+</body>
+</html>
